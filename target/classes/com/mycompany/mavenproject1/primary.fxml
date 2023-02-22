@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="435.0" prefWidth="451.0" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject1.PrimaryController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <AnchorPane prefHeight="360.0" prefWidth="411.0">
+         <children>
+            <Button fx:id="increasebtn" layoutX="50.0" layoutY="252.0" mnemonicParsing="false" onAction="#increment" text="INCREASE" textFill="#e81010">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="decreasebtn" layoutX="253.0" layoutY="252.0" mnemonicParsing="false" onAction="#decrement" text="DECREASE" textFill="#1084ae">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="label" layoutX="139.0" layoutY="63.0" text="NUMBER COUNTER" textFill="#7c7750">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="counter" layoutX="178.0" layoutY="163.0" text="0">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="119.0" layoutY="144.0" text="+" textFill="#c61414">
+               <font>
+                  <Font size="58.0" />
+               </font>
+            </Label>
+            <Label layoutX="224.0" layoutY="150.0" text="-" textFill="#1ba4c2">
+               <font>
+                  <Font size="51.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
